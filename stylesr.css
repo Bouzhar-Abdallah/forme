@@ -6,11 +6,14 @@
   body{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-image: linear-gradient(180deg,rgba(4,9,30,0.75),rgba(4,9,30,0.2)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
+    text-align: center;
+    
 }
+
 nav{
   display: flex;
   padding: 2% 6%;
@@ -35,6 +38,11 @@ nav img{
  text-decoration: none;
  font-size: 13px;
 }
+form a{
+  color: #fff;
+  
+  font-size: 13px;
+ }
 .nav-links ul li::after{
   content: '';
   width: 0%;
@@ -47,31 +55,55 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
-
-.form-h h1 {
-  font-size: 62px;
+.text-box{
+  width: 35%;
   color: #fff;
-}
-.form-h p {
-  font-size: 14px;
-  margin: 10px 0 40px;
-  color: #fff;
-}
-.form{
-  width: 60%;
-  background-color: #ACC8E5;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-.form-h{
-  margin: auto auto;
-  width: 90%;
-  top: 50%;
-  left: 50%;
+  position: top;
+  text-align: right;
+  margin-bottom: 50px;
+  border-bottom:2px solid #f44336;
   
-  text-align: center;
 }
+
+
+h1{
+  font-size: 20px;
+}
+p{
+  font-size: 14px;
+}
+
+form{
+  width: 500px;
+  color: #fff;
+  background-color: rgba(4,9,30,0.5);
+
+  position: relative;
+  text-align: left;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+label{
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10px;
+
+
+  padding-left: 10px;
+ 
+}
+
+input{
+  display: inline-block;
+  align-items: left;
+}
+
+fieldset{
+  border: none;
+  border-bottom:2px solid #f44336;
+  padding: 25px 25px;
+}
+
+
+
